@@ -6,11 +6,9 @@ $( window ).on( "load", function() {
 function render(){
     var saldoValor = document.getElementById("saldoValor")
     saldoValor.innerHTML = saldo
-    //`${saldo},00`
 
     var trocoValor = document.getElementById("trocoValor")
     trocoValor.innerHTML = troco
-    //`${troco},00`
 }
 var doces = {
     "A" : 6,
@@ -21,8 +19,16 @@ var saldo = 0;
 var troco = 0;
 
 function adicionarSaldo(event){
-    saldo = parseInt(saldo) + parseInt(event.value)
-    render()
+    var somaSaldo = parseInt(saldo) + parseInt(event.value)
+    if(somaSaldo <= 10 && troco == 0) {
+        saldo = somaSaldo
+        render()
+    } else if (somaSaldo > 10) {
+        alert('A maquina não suport mais de 10$')
+    } else {
+        alert('Para realizar uma nova compra, finalize e retire seu troco.')
+    }
+    
 }
 
 function desistir(){
@@ -34,10 +40,14 @@ function desistir(){
 function comprar(){
     var opcao = $( "input[name=options]:checked" ).val()
     
-    if(opcao && saldo > doces[opcao]){
-        console.log('comprando', doces[opcao])
-        saldo = parseInt(saldo) - doces[opcao]
-        console.log('saldo atual', saldo)
+    devolucao = parseInt(saldo) - doces[opcao]
+    saldoInvalido = doces[opcao] - parseInt(saldo)
+
+    if(opcao && saldo >= doces[opcao]){
+        troco = devolucao
+        saldo = 0
         render()
+    } else {
+        alert('Voce ainda não possui saldo suficiente para comprar o doce. Adicione mais ' + saldoInvalido + ' para compra-lo')
     }
 }
