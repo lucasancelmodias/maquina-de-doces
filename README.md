@@ -23,6 +23,12 @@ Dicionário:
   <img src="images/maquina-de-doces.jpeg" alt="AFD da Maquina de Doces">
 </p>
 
+
+
+https://user-images.githubusercontent.com/57200000/141985552-d6dcc587-a7eb-48d7-b06d-ddd5a2d6fe04.mov
+
+
+
 ## Desenvolvedores 🍡
 - [Lucas Ancelmo](https://github.com/lucasancelmodias)
 - [Matheus Albuquerque](https://github.com/matgomalb)
