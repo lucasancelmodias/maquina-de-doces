@@ -19,8 +19,9 @@ Dicionário:
 </p>
 
 ## HTML 🍧
-Tirar um print da tela quando tiver pronta e colocar aqui :D
-Talvez até fazer um gif dele funfando
+<p align="center">
+  <img src="images/maquina-de-doces.jpeg" alt="AFD da Maquina de Doces">
+</p>
 
 ## Desenvolvedores 🍡
 - [Lucas Ancelmo](https://github.com/lucasancelmodias)
