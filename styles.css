@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Titulo;
+    src: url('fonts/Bray\ Notes.ttf') format('truetype'),
+        url('fonts/Bray-Notes.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #DB8388;
+
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: -10px 10px 20px #4b2d1f;
+
+}
+
+
+.detalhe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+
+}
+
+.mensagem {
+    color: #DB8388;
+    font-weight: 600;
+}
+
+.btn-comprar {
+    background-color: #DB8388;
+    color: #4b2d1f;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #DB8388;
+
+}
+
+.btn-comprar:hover {
+    background-color: #4b2d1f;
+    color: #DB8388;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #4b2d1f;
+}
+
+.btn-finalizar {
+    background-color: #4b2d1f;
+    color: #DB8388;
+    font-weight: 700;
+    margin-bottom: 10%;
+    border-color: #4b2d1f;
+
+}
+
+.btn-finalizar:hover {
+    background-color: #DB8388;
+    color: #4b2d1f;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #DB8388;
+}
+
+.btn-entrada {
+    background-color: #DB8388;
+    color: #4b2d1f;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #DB8388;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.btn-entrada:hover {
+    background-color: #4b2d1f;
+    color: #DB8388;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #4b2d1f;
+}
+
+
+.btn-light {
+    background-color: #4b2d1f;
+    color: #DB8388;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #4b2d1f;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.btn-light:hover {
+    background-color: #DB8388;
+    color: #4b2d1f;
+    font-weight: 700;
+    margin-bottom: 1%;
+    border-color: #DB8388;
+}
+
+.saldoTroco {
+    font-family: Titulo;
+    color: #4b2d1f;
+    font-size: 25px;
+
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: #DB8388;
+    font-family: Titulo;
+    font-size: 40px;
+}
