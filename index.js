@@ -16,10 +16,8 @@ function render(messagem, doce, trocoMessage ,sucesso){
     if(sucesso){
         document.getElementById('ImagemDoce').innerHTML = '<img src="imgs/Doce' +doce + '.png" id="imageBox"/>';
     }else{
-
         document.getElementById('ImagemDoce').innerHTML =''
     }
-    
 }
 var doces = {
     "A" : 6,
@@ -38,12 +36,9 @@ function adicionarSaldo(event){
         render('Bem vindo, por favor insira um valor.','','',false)
     } else if (somaSaldo > 10) {
         render('A maquina não suporta mais de R$ 10,00','','',false)
-        // alert('A maquina não suporta mais de R$ 10,00')
     } else {
         render('Para realizar uma nova compra, finalize e retire seu troco.','','',false)
-        // alert('Para realizar uma nova compra, finalize e retire seu troco.')
     }
-    
 }
 
 function desistir(){
@@ -64,6 +59,5 @@ function comprar(){
         render('Obrigado por comprar o doce ',opcao,' Seu troco é de R$' + troco,true,)
     } else {
         render('Você ainda não possui saldo suficiente para comprar o doce. Adicione mais ' + saldoInvalido + ' para compra-lo','','',false)
-        // alert('Você ainda não possui saldo suficiente para comprar o doce. Adicione mais ' + saldoInvalido + ' para compra-lo')
     }
 }
